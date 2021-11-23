@@ -1,0 +1,1 @@
+/sap/opu/odata/sap/ZATB_HIER_TRIAL_SRV/ZATB_I_TrialHierarchy(p_begda=datetime%272021-11-23T00%3a00%3a00%27,p_endda=datetime%272021-11-23T00%3a00%3a00%27)/Set?sap-client=001&$skip=0&$top=25&$filter=parent_id%20eq%20%27OBJECT_1_1%27
