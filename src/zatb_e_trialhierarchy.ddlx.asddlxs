@@ -1,0 +1,47 @@
+@Metadata.layer: #CUSTOMER
+annotate view ZATB_I_TrialHierarchy with
+  parameters
+    @EndUserText: {
+      label: 'Begin Date'
+    }
+    p_begda,
+
+    @EndUserText: {
+      label: 'End Date'
+    }
+    p_endda
+{
+
+  @UI.lineItem: [{ position: 40, label: 'Rank' }]
+  hierarchy_rank;
+  @UI.lineItem: [{ position: 50, label: 'Parent Rank' }]
+  hierarchy_parent_rank;
+
+  @EndUserText: {
+    label: 'Non key field'
+  }
+  @UI.lineItem: [{ position: 60, label: 'Parent ID' }]
+  @UI.selectionField: [{position: 10 }]
+  parent_id;
+
+  @EndUserText: {
+    label: 'Key field'
+  }
+  @UI.lineItem: [{ position: 70, label: 'Node ID' }]
+  @UI.selectionField: [{position: 20 }]
+  node_id;
+
+  @UI.lineItem: [{ position: 80, label: 'Hier. Level' }]
+  hierarchy_level;
+
+  @UI.lineItem: [{ position: 90, label: 'Tree Size' }]
+  hierarchy_tree_size;
+  
+  @EndUserText: {
+    label: 'Process ID'
+  }
+  @UI.lineItem: [{ hidden: true }]
+  @UI.selectionField: [{position: 30 }]
+  ProcessIdLookup;
+  
+}
